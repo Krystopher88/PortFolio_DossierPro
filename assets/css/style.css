@@ -7,7 +7,7 @@
 body{
   background: #151515;
   color: aliceblue;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   max-width: 100vw;
 }
@@ -38,9 +38,24 @@ ul{
   flex-direction: column;
 }
 
-.nav_logo{
+.nav_logo span{
+  display: inline-block;
+  border-bottom: 3px solid #FFD700;
   font-size: 1.2rem;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(8) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .nav_icon_container{
@@ -75,13 +90,15 @@ ul{
 }
 
 .header_prez{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1;
 }
 
-.header_name{
+.header_name {
   border-bottom: 5px solid #FFD700;
 }
+
+
 
 .header_text{
   margin: 1.5rem 0;
@@ -132,6 +149,32 @@ ul{
   background-color: #242424;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #151515;
+  border: 1px solid #FFD700;
+  border-radius: 5%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+}
+
+
 @media screen and (min-width: 1100px){
 
   body{
@@ -156,7 +199,7 @@ ul{
   }
 
   .header_prez{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 

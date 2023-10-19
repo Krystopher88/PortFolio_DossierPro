@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/76fc774c21.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Dossier Profolio</title>
@@ -17,8 +17,8 @@
     <nav class="nav nav_position">
       <div class="nav_logo"><span>krystdev</span></div>
       <ul class="nav_icon_container">
-        <li><a href="" class="nav_icons"><i class="fa-brands fa-github icons"></i></a></li>
-        <li><a href="" class="nav_icons"><i class="fa-brands fa-linkedin icons"></i></a></li>
+        <li><a href="https://github.com/Krystopher88" target="_blank" class="nav_icons"><i class="fa-brands fa-github icons"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/christopher-bichon-b95a3916a/" target="_blank" class="nav_icons"><i class="fa-brands fa-linkedin icons"></i></a></li>
         <li><a href="" class="nav_icons">Malt</a></li>
       </ul>
     </nav>
@@ -49,8 +49,8 @@
           <img class="section_img" src="assets/images/folio/garagevparrot-index.png" alt="GarageVParrot">
         </div>
         <div class="project_link">
-          <a href="https://garagevparrot.krystdev.fr/" class="section_link">Voir le projet</a>
-          <a href="https://github.com/Krystopher88/GarageVParrot" class="section_link">Voir le code</a>
+          <a href="https://garagevparrot.krystdev.fr/" target="_blank" class="section_link">Voir le projet</a>
+          <a href="https://github.com/Krystopher88/GarageVParrot" target="_blank" class="section_link">Voir le code</a>
         </div>
         <h3 class="project_title">Garage Vincent Parrot</h3>
         <div class="project_languages">
@@ -74,8 +74,8 @@
           <img class="section_img" src="assets/images/folio/loopstudio.png" alt="LoopStudio">
         </div>
         <div class="project_link">
-          <a href="websites/loopstudio/index.html" class="section_link">Voir le projet</a>
-          <a href="https://github.com/Krystopher88/HTML_CSS_LoopStudio" class="section_link">Voir le code</a>
+          <a href="websites/loopstudio/index.html" target="_blank" class="section_link">Voir le projet</a>
+          <a href="https://github.com/Krystopher88/HTML_CSS_LoopStudio" target="_blank" class="section_link">Voir le code</a>
         </div>
         <h3 class="project_title">LoopStudio</h3>
         <div class="project_languages">
@@ -89,8 +89,8 @@
             <img class="section_img" src="assets/images/folio/dicegame.png" alt="DiceGame">
           </div>
           <div class="project_link">
-            <a href="websites/dicegame/index.html" class="section_link">Voir le projet</a>
-            <a href="https://github.com/Krystopher88/HTML_CSS_JS-DiceGame" class="section_link">Voir le code</a>
+            <a href="websites/dicegame/index.html" target="_blank" class="section_link">Voir le projet</a>
+            <a href="https://github.com/Krystopher88/HTML_CSS_JS-DiceGame" target="_blank" class="section_link">Voir le code</a>
           </div>
           <h3 class="project_title">DiceGame</h3>
           <div class="project_languages">
@@ -103,8 +103,8 @@
             <img class="section_img" src="assets/images/folio/cuisinea.png" alt="DiceGame">
           </div>
           <div class="project_link">
-            <a href="#" class="section_link">Voir le projet</a>
-            <a href="https://github.com/Krystopher88/Projet-Live-Studi-Cuisinea" class="section_link">Voir le code</a>
+            <a href="#" target="_blank" class="section_link">Voir le projet</a>
+            <a href="https://github.com/Krystopher88/Projet-Live-Studi-Cuisinea" target="_blank" class="section_link">Voir le code</a>
           </div>
           <h3 class="project_title">Cuisinéa</h3>
           <div class="project_languages">
@@ -117,10 +117,33 @@
           </div>
         </div>
       </div>
+      <div class="project_container1">
+        <div class="projects">
+        <div class="screenshot">
+          <img class="section_img" src="assets/images/folio/profolio.png" alt="LoopStudio">
+        </div>
+        <div class="project_link">
+          <a href="#" id="popupLink" class="section_link">Voir le projet</a>
+          <a href="https://github.com/Krystopher88/PortFolio_DossierPro" target="_blank" class="section_link">Voir le code</a>
+        </div>
+        <h3 class="project_title">Une impression de déjà vu</h3>
+        <div class="project_languages">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+        </div>
+      </div>
+      </div>
     </section>
-  </main>
 
-</body>
+    <!-- Start PopUp -->
+    <div class="popup" id="popup">
+      <h2>Déjà Vu</h2>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <!-- End PopUp -->
+
+  </main>
 <footer class="section_grey">
   <nav class="nav">
     <div class="nav_logo"><span>KrystDev</span></div>
@@ -131,5 +154,8 @@
     </ul>
   </nav>
 </footer>
+<script src="./assets/js/script.js"></script>
+</body>
+
 
 </html>
