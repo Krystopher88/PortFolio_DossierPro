@@ -1,1 +1,6 @@
 /note.txt
+/lib/*Deploy.php
+websites/cuisinea/lib/userDeploy.php
+websites/cuisinea/lib/recipeDeploy.php
+websites/cuisinea/lib/pdoDeploy.php
+websites/cuisinea/lib/categoryDeploy.php

@@ -13,14 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
   overlay.addEventListener("click", function () {
     popup.style.display = "none";
     overlay.style.display = "none";
-    // Faites défiler vers le haut de la page
     window.scrollTo(0, 0);
   });
 
   closePopup.addEventListener("click", function () {
     popup.style.display = "none";
     overlay.style.display = "none";
-    // Faites défiler vers le haut de la page
     window.scrollTo(0, 0);
   });
 });
